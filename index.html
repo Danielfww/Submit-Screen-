@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flask Webpage</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+  
+  
+<body>
+  <div class="page">
+    <div class="child1">
+      <img src="your_logo.png" alt="Logo"></img> </div>
+    <br>
+    <br>
+  <br>
+  <br>
+  <div class="child2">
+    <form action="/update" method="post">
+      
+      <!--
+        <label for="dropdown1">Dropdown 1:</label>
+        <select id="dropdown1" name="dropdown1"> 
+-->
+          
+          <label for="dropdown1">Dropdown 1:</label>
+        <select id="dropdown1" name="dropdown1">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+      </select>
+      <br>
+      <br>
+    
+    
+            <!-- Add more options as needed -->
+
+        <label for="dropdown2">Dropdown 2:</label>
+        <select id="dropdown2" name="dropdown2">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <!-- Add more options as needed -->
+ 
+        </select>
+      <br>
+      
+<!--Text Field-->
+          <label for="blog"> </label>
+      <br>
+      
+      
+      <!--Will this be needed? Check this grant
+      <form action="/action_page.php">
+        -->
+      
+      <label for="blog"></label>
+        <textarea id="blog" name="blog" rows="5" columns="20" minlength="1" maxlength="15"
+pattern="(/^[A-Za-z]+$/)" required >
+</textarea>
+      <br>
+      <br>
+      
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-ariel py-2 px-4 rounded">
+  Submit
+</button>
+      
